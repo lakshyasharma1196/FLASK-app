@@ -9,8 +9,8 @@ python main.py
 
 # To Build the docker 
 
-docker build -t my_flask_app --build-arg SQLALCHEMY_DATABASE_URI='<your database uri>' -f docker/Dockerfile .
+docker build -t my_flask_app --build-arg SQLALCHEMY_DATABASE_URI=your_database_uri -f docker/Dockerfile .
 
 # To run docker build
 
-docker run -e SQLALCHEMY_DATABASE_URI='<your database uri>' -p 5000:5000 my_flask_app
+docker run -e SQLALCHEMY_DATABASE_URI=your_database_uri -p 5000:5000 my_flask_app
